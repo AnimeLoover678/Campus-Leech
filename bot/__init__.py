@@ -66,7 +66,7 @@ status_reply_dict = {}
 download_dict = {}
 rss_dict = {}
 
-BOT_TOKEN = environ.get('BOT_TOKEN', '6663148754:AAHTgrKazeWdlj2XBCIzAVHsmRDti5F61ZA')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6491813903:AAEJn3Qstpf3GoEykQe8mzilY70NebqESUU')
 if len(BOT_TOKEN) == 0:
     log_error("BOT_TOKEN variable is missing! Exiting now")
     exit(1)
@@ -108,7 +108,7 @@ if DATABASE_URL:
         del qbit_opt['_id']
         qbit_options = qbit_opt
     conn.close()
-    BOT_TOKEN = environ.get('BOT_TOKEN', '6663148754:AAHTgrKazeWdlj2XBCIzAVHsmRDti5F61ZA')
+    BOT_TOKEN = environ.get('BOT_TOKEN', '6491813903:AAEJn3Qstpf3GoEykQe8mzilY70NebqESUU')
     bot_id = BOT_TOKEN.split(':', 1)[0]
     DATABASE_URL = environ.get('DATABASE_URL', '')
 else:
